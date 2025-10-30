@@ -23,5 +23,7 @@ function render() {
         </tr>`
     )
 
-    document.querySelector('.books').innerHTML = strHTMLs.join('')
+function onRemoveBook (bookId) {
+    removeBook(bookId)
+    render()
 }
