@@ -47,3 +47,11 @@ function updatePrice(idx, newPrice) {
     var bookToUpdate = gBooks.find(book => book.id === idx )
     bookToUpdate.price = newPrice
 }
+function _createBook(titleTxt, bookPrice){
+    return {
+        id: gBooks.length+1,
+        title: titleTxt,
+        price: bookPrice,
+        imgUrl: ''
+    }
+}
