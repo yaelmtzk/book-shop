@@ -55,3 +55,9 @@ function _createBook(titleTxt, bookPrice){
         imgUrl: ''
     }
 }
+
+function getRandomInt(min, max) {
+    const minCeiled = Math.ceil(min)
+    const maxFloored = Math.floor(max)
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled)
+}
