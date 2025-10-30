@@ -28,3 +28,19 @@ function onRemoveBook (bookId) {
     removeBook(bookId)
     render()
 }
+
+function onUpdateBook(bookId){
+
+    if (document.querySelector(`.form${bookId}`)) return
+
+    var elRow = document.querySelector(`.row${bookId}`)
+
+    elRow.innerHTML += `
+        <form onsubmit="onChangePrice(${bookId}, event)" class="form${bookId}">
+            <label>Enter new price:
+            <input type="text" name="change=price" placeholder="e.g. 10"/>
+            <button class="confirm-btn">Ok</button>
+            </label>
+        </form>
+    `
+}
