@@ -1,16 +1,43 @@
 *{
     box-sizing: border-box;
 }
-
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+    margin: 0;
+    height: 100%;
 }
 
-table, th, td{
+.grid-container > * {
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 500px 200px;
+    grid-template-rows: 500px;
+
+    grid-template-areas: "main aside";
+
+    margin-top: 100px;
+    margin-left: 50px;
+    gap:  30px;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+    margin-top: 80px;
+}
+
+table, th{
     border-collapse: collapse;
     border: solid 1px lightslategray;
-
-    margin: 100px auto;
+    margin: auto;
 }
 
 th{
@@ -21,6 +48,13 @@ th, td{
 }
 
 tr:nth-child(even) {background-color: lightgrey;}
+
+.action-btns{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
 
 button{
     padding: 5px 10px;
@@ -48,7 +82,32 @@ form{
 .confirm-btn{
     font-size:x-small;
 }
-
 input{
+    width: 300px;
+}
+
+.change-price-form{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+input .change-price{
     width: 50px;
+}
+
+.add-btn{
+    background-color: cornflowerblue;
+    width: fit-content;
+}
+
+.add-form{
+    margin-top: 10px;
+}
+
+.confirm-add-btn{
+    margin: 10px;
+}
+
+.hide{
+    display: none;
 }
