@@ -47,6 +47,7 @@ function updatePrice(idx, newPrice) {
     var bookToUpdate = gBooks.find(book => book.id === idx )
     bookToUpdate.price = newPrice
 }
+
 function _createBook(titleTxt, bookPrice){
     return {
         id: gBooks.length+1,
@@ -54,6 +55,11 @@ function _createBook(titleTxt, bookPrice){
         price: bookPrice,
         imgUrl: ''
     }
+}
+function addBook(title, price) {
+    var newBook = _createBook(title, price)
+
+    gBooks.push(newBook)
 }
 
 function getRandomInt(min, max) {
