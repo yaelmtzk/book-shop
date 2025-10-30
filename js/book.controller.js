@@ -44,3 +44,14 @@ function onUpdateBook(bookId){
         </form>
     `
 }
+
+function onChangePrice(bookId, ev) {
+    ev.preventDefault()
+    const elInput = document.querySelector('[name="change=price"]')
+    const price =  elInput.value
+
+    updatePrice(bookId, price)
+
+    render()
+}
+
