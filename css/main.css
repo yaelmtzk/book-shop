@@ -30,14 +30,25 @@ button{
     cursor: pointer;
 }
 
-.btn-read{
+.read-btn{
     background-color: cornflowerblue;
 }
 
-.btn-update{
+.update-btn{
     background-color:khaki;
 }
 
-.btn-delete{
+.delete-btn{
     background-color:orange;
+}
+
+form{
+    margin: 5px;
+}
+.confirm-btn{
+    font-size:x-small;
+}
+
+input{
+    width: 50px;
 }
