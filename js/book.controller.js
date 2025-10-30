@@ -36,9 +36,9 @@ function onUpdateBook(bookId){
     var elRow = document.querySelector(`.row${bookId}`)
 
     elRow.innerHTML += `
-        <form onsubmit="onChangePrice(${bookId}, event)" class="form${bookId}">
+        <form onsubmit="onChangePrice(${bookId}, event)" class="change-price-form form${bookId}">
             <label>Enter new price:
-            <input type="text" name="change=price" placeholder="e.g. 10"/>
+            <input type="text" name="change-price" placeholder="e.g. 10"/>
             <button class="confirm-btn">Ok</button>
             </label>
         </form>
@@ -47,7 +47,7 @@ function onUpdateBook(bookId){
 
 function onChangePrice(bookId, ev) {
     ev.preventDefault()
-    const elInput = document.querySelector('[name="change=price"]')
+    const elInput = document.querySelector('[name="change-price"]')
     const price =  elInput.value
 
     updatePrice(bookId, price)
@@ -77,4 +77,23 @@ function onAddClick(){
             </form>
         `
     }
+}
+
+function onAddBook(ev){
+    ev.preventDefault()
+
+    const elTitleInput = document.querySelector('[name="title"]')
+    const bookTitle = elTitleInput.value
+
+    const elPriceInput = document.querySelector('[name="price"]')
+    const bookPrice =  elPriceInput.value
+
+    addBook(bookTitle, bookPrice)
+
+    elTitleInput.value = ''
+    elPriceInput.value = ''
+
+    document.querySelector('.add-form').classList.add('hide')
+
+    render()
 }
