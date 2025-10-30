@@ -35,6 +35,6 @@ const gBooks = [
 
 function getBooks(){
 
-    return gBooks()
+    return gBooks
 
 }
