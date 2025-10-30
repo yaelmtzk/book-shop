@@ -2,10 +2,8 @@
 
 function onInit() {
     
-    render()
-    
+    render() 
 }
-
 
 function render() {
     
@@ -18,10 +16,13 @@ function render() {
             <td class="action-btns">
                 <button class="btn-read">Read</button>
                 <button class="btn-update">Update</button>
-                <button class="btn-delete">Delete</button>
+                <button onclick="onRemoveBook('${book.id}')"class="btn-delete">Delete</button>
             </td>
         </tr>`
     )
+
+    document.querySelector('tbody').innerHTML = strHTMLs.join('')
+}
 
 function onRemoveBook (bookId) {
     removeBook(bookId)
