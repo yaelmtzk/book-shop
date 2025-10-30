@@ -13,8 +13,8 @@ function render() {
         `<tr >
             <td class="title">${book.title}</td>
             <td class="price">${book.price}</td>
-            <td class="action-btns">
-                <button class="btn-read">Read</button>
+            <td class="action-btns row${book.id}">
+                <button class="read-btn">Read</button>
                 <button onclick="onUpdateBook(${book.id})" class="update-btn">Update</button>
                 <button onclick="onRemoveBook('${book.id}')"class="btn-delete">Delete</button>
             </td>
