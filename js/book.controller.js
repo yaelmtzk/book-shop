@@ -68,7 +68,7 @@ function onAddBook(ev, backDropClass){
     elTitleInput.value = ''
     elPriceInput.value = ''
 
-    document.querySelector('.add-form').classList.add('hide')
+    closeModal(ev, backDropClass)
 
     render()
 }
