@@ -23,9 +23,17 @@
                 <button onclick="openModal('add-book-bdrop')" 
                 class="add-btn">Add New Book</button>
             </section>
-        </aside>
-    </section>
-</div>
+
+    <div class="backdrop details-book">
+        <section class="modal">
+            <button onclick="closeModal(event,'details-book')" class="btn-close">x</button>
+            <section class="details-board">
+                <img src="https://images.meesho.com/images/products/548939233/4nnvn_512.avif?width=512" alt="">
+                <h2>Title: <span></span></h2>
+                <p>Price: <span>0</span></p>
+            </section>
+        </section>
+    </div>
 
     <div class="backdrop add-book-bdrop">
         <section class="modal">
