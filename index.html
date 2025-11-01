@@ -25,6 +25,24 @@
             </section>
         </aside>
     </section>
+</div>
+
+    <div class="backdrop add-book-bdrop">
+        <section class="modal">
+            <button onclick="closeModal(event,'add-book-bdrop')" 
+            class="btn-close">x</button>
+                <form onsubmit="onAddBook(event, 'add-book-bdrop')" class="add-form">
+                    <p><strong>New Book:</strong></p>
+                    <label>Enter the book title:</label><br>
+                    <input type="text" name="title" placeholder="e.g. My Book"/><br><br>
+                
+                    <label>Enter the book price:</label><br>
+                    <input type="number" name="price" min = "1" placeholder="e.g. 10"/><br>
+                    
+                    <button class="confirm-add-btn">Add Book</button>
+                </form>
+        </section>
+    </div>
 
     <script src="js/book.controller.js"></script>
     <script src="js/book.service.js"></script>
