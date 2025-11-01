@@ -54,31 +54,7 @@ function onChangePrice(bookId, ev) {
     render()
 }
 
-function onAddClick(){
-    var elForm = document.querySelector('.add-form')
-
-    if (elForm && !elForm.classList.contains('hide')) return
-
-    if(elForm) elForm.classList.remove('hide')
-    
-    else{
-        var elSection = document.querySelector('.section-add')
-
-        elSection.innerHTML += `
-            <form onsubmit="onAddBook(event)" class="add-form">
-                <label>Enter the book title:</label><br>
-                <input type="text" name="title"/><br><br>
-            
-                <label>Enter the book price:</label><br>
-                <input type="number" name="price" min = "1"/><br>
-                
-                <button class="confirm-add-btn">Add Book</button>
-            </form>
-        `
-    }
-}
-
-function onAddBook(ev){
+function onAddBook(ev, backDropClass){
     ev.preventDefault()
 
     const elTitleInput = document.querySelector('[name="title"]')
