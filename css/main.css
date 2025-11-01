@@ -114,13 +114,8 @@ input{
     transition: opacity .8s ease-out;    
 }
 
-.modal .circle{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-
-    place-self: center;
-    cursor: pointer;
+.sucess{
+    z-index: -1;
 }
 
 .modal .btn-close {
