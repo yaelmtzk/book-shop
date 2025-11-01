@@ -74,6 +74,23 @@ function onAddBook(ev, backDropClass){
     render()
 }
 
+function onDisplayDetails(bookId, bkDrclass) {
+
+    const book = getBook(bookId)
+    var img = book.imgUrl.length!==0? `<img src="${book.imgUrl}"
+    alt="${book.title.toLowerCase().split(' ').join('-')}-img">`: '' 
+
+    var strHTMLs = `
+            ${img}
+            <p>Title: ${book.title}</p>
+            <p>Price: $${book.price}</p>
+        `
+    var elDetails = document.querySelector('.details-board')
+    elDetails.innerHTML = strHTMLs
+
+    openModal(bkDrclass)
+}
+
 function openModal(backDropclass){
     var elBackdrop = document.querySelector(`.${backDropclass}`)
 
