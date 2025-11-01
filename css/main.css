@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body {
+    place-items: center;
     margin: 0;
     height: 100%;
     font-size: 16px;
@@ -12,24 +13,17 @@ body {
 table, th{
     border-collapse: collapse;
     border: solid 1px lightslategray;
-    margin: auto;
 }
 
 th{
     background-color: gray;
 }
+
 th, td{
     padding: 10px;
 }
 
 tr:nth-child(even) {background-color: lightgrey;}
-
-.action-btns{
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 5px;
-}
 
 button{
     padding: 5px 10px;
@@ -61,12 +55,7 @@ input{
     width: 300px;
 }
 
-.change-price-form{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-input .change-price{
+[name="change-price"]{
     width: 50px;
 }
 
@@ -80,7 +69,8 @@ input .change-price{
 }
 
 .confirm-add-btn{
-    margin: 10px;
+    margin-top: 10px;
+    background-color: orange;
 }
 
 .hide{
