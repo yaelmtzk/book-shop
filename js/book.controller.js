@@ -12,7 +12,7 @@ function render() {
     var strHTMLs = books.map(book =>
         `<tr >
             <td class="title">${book.title}</td>
-            <td class="price">${book.price}</td>
+            <td class="price">$<span>${book.price}</span></td>
             <td class="action-btns row${book.id}">
                 <button class="read-btn">Read</button>
                 <button onclick="onUpdateBook(${book.id})" class="update-btn">Update</button>
@@ -37,10 +37,9 @@ function onUpdateBook(bookId){
 
     elRow.innerHTML += `
         <form onsubmit="onChangePrice(${bookId}, event)" class="change-price-form form${bookId}">
-            <label>Enter new price:
+            <label>Enter new price:</label>
             <input type="text" name="change-price" placeholder="e.g. 10"/>
             <button class="confirm-btn">Ok</button>
-            </label>
         </form>
     `
 }
@@ -48,7 +47,7 @@ function onUpdateBook(bookId){
 function onChangePrice(bookId, ev) {
     ev.preventDefault()
     const elInput = document.querySelector('[name="change-price"]')
-    const price =  elInput.value
+    const price =  parseInt(elInput.value)
 
     updatePrice(bookId, price)
 
