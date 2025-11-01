@@ -72,3 +72,26 @@ function onAddBook(ev, backDropClass){
 
     render()
 }
+
+function openModal(backDropclass){
+    var elBackdrop = document.querySelector(`.${backDropclass}`)
+
+    var elModal = document.querySelector(`.${backDropclass} .modal`)
+   
+    elBackdrop.style.opacity = '1'
+    elModal.style.opacity = '1'
+
+    elBackdrop.style.zIndex = '10'
+}
+
+function closeModal(ev, backDropclass) {
+    ev.preventDefault()
+
+    var elBackdrop = document.querySelector(`.${backDropclass}`)
+
+    var elModal = document.querySelector(`.${backDropclass} .modal`)
+   
+    elBackdrop.style.opacity = '0'
+    elModal.style.opacity = '0'
+
+    elBackdrop.style.zIndex = '-2'
