@@ -33,8 +33,11 @@ const gBooks = [
   }
 ]
 
-function getBooks(){
+function getBook(idx){
+    return gBooks.find(book => book.id === idx)
+}
 
+function getBooks(){
     return gBooks
 }
 
@@ -58,7 +61,6 @@ function _createBook(titleTxt, bookPrice){
 }
 function addBook(title, price) {
     var newBook = _createBook(title, price)
-
     gBooks.push(newBook)
 }
 
