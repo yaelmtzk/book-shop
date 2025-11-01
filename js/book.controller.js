@@ -14,7 +14,8 @@ function render() {
             <td class="title">${book.title}</td>
             <td class="price">$<span>${book.price}</span></td>
             <td class="action-btns row${book.id}">
-                <button class="read-btn">Read</button>
+
+                <button onclick="onDisplayDetails(${book.id}, 'details-book')" class="read-btn">Details</button>
                 <button onclick="onUpdateBook(${book.id})" class="update-btn">Update</button>
                 <button onclick="onRemoveBook(${book.id}) "class="delete-btn">Delete</button>
             </td>
@@ -95,3 +96,4 @@ function closeModal(ev, backDropclass) {
     elModal.style.opacity = '0'
 
     elBackdrop.style.zIndex = '-2'
+}
