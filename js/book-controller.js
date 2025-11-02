@@ -40,7 +40,7 @@ function onUpdateBook(bookId){
     elRow.innerHTML += `
         <form onsubmit="onChangePrice(${bookId}, event)" class="change-price-form form${bookId}">
             <label>Enter new price:</label>
-            <input type="text" name="change-price" placeholder="e.g. 10"/>
+            <input type="text" name="change-price" placeholder="e.g. 10" required/>
             <button class="confirm-btn">Ok</button>
         </form>
     `
