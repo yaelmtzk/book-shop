@@ -18,6 +18,10 @@ h1 {
     padding-block-end: 30px;
 }
 
+h1 span{
+    color: #F08000;
+}
+
 table, th{
     border-collapse: collapse;
     border: solid 1px lightslategray;
