@@ -52,6 +52,13 @@
 
 
         <div class="sort-by-asc-desc">
+        <select onchange="onSetSort({ rate: this.value })" type="text">
+            <option value="0">order</option>
+            <option value="ascending">&#8593</option>
+            <option value="descending">&#8595</option>
+        </select>
+    </div>
+
     <table class="table-container">
                 <thead>
                     <tr class="header">
