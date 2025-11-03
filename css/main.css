@@ -38,19 +38,24 @@ input::placeholder {
     text-align: center;
     font-weight: 600;
 }
+table{
+    margin-bottom: 100px;
+}
 table, th{
     border-collapse: collapse;
-    border: solid 1px lightslategray;
+    border: none;
+    background-color: white;
 }
 
 th{
-    background-color: gray;
+    background-color: #F08000;
 }
 
 th, td{
     padding: 10px;
 }
 
+tr:nth-child(even) {background-color: #ffe9a3 }
 
 .cards-container {
     display: flex;
