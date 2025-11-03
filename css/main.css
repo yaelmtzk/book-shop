@@ -192,4 +192,23 @@ input{
 img{
     width: 260px;
     height: 260px;
+
+footer {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background-color: #F08000;
+    width: 100%;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 0;
+}
+
+footer span {
+    margin-inline-start: 40px;
+    font-size: 18px;
+    font-weight: bold;
 }
