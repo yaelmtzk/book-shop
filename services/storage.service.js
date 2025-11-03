@@ -13,7 +13,6 @@ function loadFromStorage(key) {
 function getNextId() {
   var nextId = +localStorage.getItem('nextBookId') || 1
   localStorage.setItem('nextBookId', nextId + 1)
-  console.log('nextId', nextId);
   
   return nextId
 }
