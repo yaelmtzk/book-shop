@@ -23,6 +23,15 @@
             <i class="fa-solid fa-grip"></i>
             </button>
         </div>
+
+        <fieldset>
+            <div class="filter-by">
+                <label> Search by title
+                    <input oninput="onSetFilterBy({ text: this.value })" class="book-title" type="text" placeholder="Book title"
+                    name="by-title" />
+                </label>
+
+        </fieldset>
     <table class="table-container">
                 <thead>
                     <tr class="header">
