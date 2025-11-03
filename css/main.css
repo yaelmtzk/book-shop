@@ -231,6 +231,15 @@ input{
 }
 
 .user-msg {
+position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(115, 248, 170);
+    padding: 10px;
+    border-radius: 4px;
+
+    opacity: 0;
+    z-index: -1;
 }
 
 img{
