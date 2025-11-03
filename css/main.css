@@ -166,12 +166,6 @@ input{
     width: 50px;
 }
 
-.add-btn{
-    margin-top: 30px;
-    background-color: cornflowerblue;
-    width: fit-content;
-}
-
 .add-form{
     margin-top: 10px;
 }
@@ -208,10 +202,10 @@ input{
     position: relative;
 
     padding: 1em;
-    width: fit-content;
+    width: 400px;
     height: fit-content;
 
-    background-color: rgb(252, 252, 252);
+    background-color: #EBEBEB ;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgb(173 173 173);
 
@@ -219,14 +213,10 @@ input{
     transition: opacity .8s ease-out;    
 }
     
-.sucess{
-    z-index: -1;
-}
-
 .modal .btn-close {
-    border: 2px solid lightgrey;
     box-shadow: 3px 3px 6px rgb(173 173 173);
-    border-radius: 50%;
+    background-color: #F08000;
+    border-radius: 5px;
 
     cursor: pointer;
 
@@ -236,8 +226,11 @@ input{
     justify-self: end;
 
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 10px;
+    right: 10px;
+}
+
+.user-msg {
 }
 
 img{
