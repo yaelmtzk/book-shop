@@ -38,6 +38,38 @@ input::placeholder {
     text-align: center;
     font-weight: 600;
 }
+
+.sort-by{
+    cursor: pointer;
+}
+
+.book-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+fieldset{
+    border-radius: 5px;
+}
+
+.filter-by{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+select{
+    border: 0.5px solid #F08000; 
+    outline: none;
+}
+
+.sort-by-asc-desc{
+    margin-bottom: 5px;
+}
+
 table{
     margin-bottom: 100px;
 }
