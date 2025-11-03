@@ -22,6 +22,22 @@ h1 span{
     color: #F08000;
 }
 
+input {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid black;
+    width: 160px;
+}
+
+input:focus {
+    outline: none;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    font-weight: 600;
+}
 table, th{
     border-collapse: collapse;
     border: solid 1px lightslategray;
