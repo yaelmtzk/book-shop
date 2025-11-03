@@ -111,6 +111,9 @@ tr:nth-child(even) {background-color: #ffe9a3 }
     width: 300px;
 }
 
+.btns{
+    margin-right: 10px;
+}
 button{
     padding: 5px 10px;
     border-radius: 5px;
@@ -119,16 +122,32 @@ button{
     cursor: pointer;
 }
 
+.btn-option {
+    background: #F08000;
+}
+
 .read-btn{
-    background-color: cornflowerblue;
+    background-color: #0474BA;
+    color: white;
 }
 
 .update-btn{
-    background-color:khaki;
+    background-color: #B2BEB5;
 }
 
 .delete-btn{
-    background-color:orange;
+    background-color:#F08000;
+    color: white;
+}
+
+.add-btn{
+    background-color: #0474BA;
+    color: white;
+}
+
+.clear-btn{
+    background-color: #F08000;
+    color: white;
 }
 
 form{
@@ -140,7 +159,7 @@ form{
 }
 
 input{
-    width: 300px;
+    width: 250px;
 }
 
 [name="change-price"]{
@@ -159,7 +178,7 @@ input{
 
 .confirm-add-btn{
     margin-top: 10px;
-    background-color: orange;
+    background-color: #F08000;
 }
 
 .hide{
